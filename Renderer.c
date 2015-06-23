@@ -132,7 +132,6 @@ static void init(void) {
     .load = window_load,
     .unload = window_unload,
   });
-  window_set_fullscreen(window, true);
   window_stack_push(window, false);
 
   tick_timer_service_subscribe(SECOND_UNIT, handle_tick_s);
